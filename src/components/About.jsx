@@ -20,10 +20,9 @@ const About = () => {
       observer.observe(sectionRef.current);
     }
 
+    const currentRef = sectionRef.current;
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 

@@ -17,7 +17,7 @@ const Header = () => {
       setTextIndex((prev) => (prev + 1) % texts.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   return (
     <header className="hero-section d-flex align-items-center">
