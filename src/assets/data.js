@@ -152,6 +152,4 @@ export const projects = [
       },
     ],
   },
-
-  // Add other projects similarly
 ];
