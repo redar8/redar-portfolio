@@ -51,7 +51,10 @@ const Projects = () => {
         </Row>
 
         <div className="cta-container">
-          <Button href="/portfolio" className="cta-button">
+          <Button
+            href="https://redar-work-gallery.netlify.app"
+            className="cta-button"
+          >
             Browse Sample Projects
             <FontAwesomeIcon icon={faArrowRight} className="cta-icon" />
           </Button>
