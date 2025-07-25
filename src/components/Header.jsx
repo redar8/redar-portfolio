@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
+import profileImage from "../images/REDAR ABDULKAREEM.png";
 
 const Header = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -26,7 +27,7 @@ const Header = () => {
           <Col lg={8} md={10}>
             <div className="mb-4">
               <img
-                src="https://media.licdn.com/dms/image/v2/C4E03AQECeDgFYECDZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1655923168695?e=1753315200&v=beta&t=YwQ_-iUudXLj4ZVptoc-Ajg_pH8809ofb90IBin1AME"
+                src={profileImage}
                 alt="Profile"
                 className="img-fluid rounded-circle animate__animated animate__zoomIn"
                 style={{ width: "180px", height: "180px", objectFit: "cover" }}
