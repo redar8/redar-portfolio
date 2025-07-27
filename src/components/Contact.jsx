@@ -210,7 +210,7 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faGithub} size="lg" />
                   </a>
                   <a
-                    href="https://www.upwork.com/freelancers/~01a23456789abcdef0"
+                    href="https://www.upwork.com/freelancers/~0127a9e1aff7a02148"
                     className="contact-icon text-primary"
                   >
                     <FontAwesomeIcon icon={faUpwork} size="lg" />

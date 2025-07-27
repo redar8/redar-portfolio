@@ -60,7 +60,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
               <a
-                href="https://www.upwork.com/freelancers/~01a23456789abcdef0"
+                href="https://www.upwork.com/freelancers/~0127a9e1aff7a02148"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-icon text-light mx-3"
