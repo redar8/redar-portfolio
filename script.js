@@ -1,11 +1,13 @@
 (() => {
+  const isTR = document.documentElement.lang.toLowerCase().startsWith('tr');
+  const ui = isTR ? { openNav: 'Navigasyonu aç', closeNav: 'Navigasyonu kapat', sending: 'Gönderiliyor…', sent: 'Teşekkürler — mesajınız başarıyla gönderildi.', sendFail: 'Form şu anda gönderilemedi. Lütfen e-posta ile iletişime geçin:' } : { openNav: 'Open navigation', closeNav: 'Close navigation', sending: 'Sending…', sent: 'Thanks — your message was sent successfully.', sendFail: 'The form could not send right now. Please email' };
   const toggle = document.querySelector('.nav-toggle');
   const menu = document.querySelector('.nav-menu');
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
       const open = menu.classList.toggle('open');
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      toggle.setAttribute('aria-label', open ? ui.closeNav : ui.openNav);
     });
     menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
       menu.classList.remove('open');
@@ -43,7 +45,7 @@
       const button = form.querySelector('.submit-btn');
       const original = button.innerHTML;
       button.disabled = true;
-      button.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending…';
+      button.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> ${ui.sending}`;
       alertBox.className = 'form-alert';
       alertBox.textContent = '';
 
@@ -56,10 +58,10 @@
         if (!response.ok) throw new Error('Form submission failed');
         form.reset();
         alertBox.className = 'form-alert success';
-        alertBox.textContent = 'Thanks — your message was sent successfully.';
+        alertBox.textContent = ui.sent;
       } catch (error) {
         alertBox.className = 'form-alert error';
-        alertBox.innerHTML = 'The form could not send right now. Please email <a href="mailto:redarreda8@gmail.com">redarreda8@gmail.com</a>.';
+        alertBox.innerHTML = `${ui.sendFail} <a href="mailto:redarreda8@gmail.com">redarreda8@gmail.com</a>.`;
       } finally {
         button.disabled = false;
         button.innerHTML = original;
