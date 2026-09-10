@@ -1,6 +1,6 @@
 # Redar Abdülkerim — Developer Portfolio
 
-A hiring-focused bilingual portfolio for Software Developer, Full-Stack, Front-End and Flutter/Mobile roles.
+A hiring-focused bilingual portfolio for Software Developer, Backend/API, Front-End and Flutter/Mobile roles.
 
 ## Positioning
 - Front-End Developer: 2018–Present
@@ -13,7 +13,7 @@ The homepage intentionally mirrors the final CV timeline so recruiters see one c
 ## Selected homepage projects
 1. NaviDo — flagship production Android app
 2. Zina Erbil — production Flutter/Firebase e-commerce app
-3. Climaverse — React/API front-end project
+3. Doctor Appointment Management System — React/Firebase/Node appointment-management web app
 
 MediaBoost AI and visual/motion work remain available as supporting product/design experience lower on the homepage and in the dedicated galleries.
 
@@ -32,3 +32,8 @@ Open `index.html` directly or use any static web server.
 
 ## Deploy to Netlify
 This is a static HTML/CSS/JavaScript portfolio. Upload the contents of this folder to Netlify or deploy the repository directly. The included `netlify.toml` publishes the repository root and requires no build step.
+
+
+## Credential
+- Web Development Bootcamp / Training Course — Mar 2019
+- Certificate page: `/certificates/web-development-training-2019/`
