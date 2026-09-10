@@ -13,7 +13,7 @@ The homepage intentionally mirrors the final CV timeline so recruiters see one c
 ## Selected homepage projects
 1. NaviDo — flagship production Android app
 2. Zina Erbil — production Flutter/Firebase e-commerce app
-3. Doctor Appointment Management System — React/Firebase/Node appointment-management web app
+3. Doctor Appointment Management System — live portfolio demo built with React/Firebase/Node
 
 MediaBoost AI and visual/motion work remain available as supporting product/design experience lower on the homepage and in the dedicated galleries.
 
@@ -37,3 +37,7 @@ This is a static HTML/CSS/JavaScript portfolio. Upload the contents of this fold
 ## Credential
 - Web Development Bootcamp / Training Course — Mar 2019
 - Certificate page: `/certificates/web-development-training-2019/`
+
+## Doctor Appointment demo
+- Live demo: https://doctor-appointment-system-redar.netlify.app/dashboard
+- GitHub: https://github.com/redar8/doctor_appointment_system_demo
